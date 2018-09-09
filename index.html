@@ -5,26 +5,67 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+		<style>
+			.coverImage
+			{
+				background:url('https://upload.wikimedia.org/wikipedia/commons/2/24/Sydney_CBD_Skyline_%287549892676%29.jpg');
+			}
+			
+			.parallax
+			{
+				background-repeat: none;
+				background-size: cover;
+			}
+			
+			@media screen and (min-width: 767px)
+			{
+				.parallax
+				{
+					background-attachment: fixed;
+				}
+			}
+			
+			.jumbotron .caption
+			{
+				color: #ffffff;
+				background: #00000080;
+			}
+			
+			.sydneyRailway
+			{
+				background:url('https://upload.wikimedia.org/wikipedia/commons/b/b0/Central_railway_station_Sydney_2017.jpg');
+			}
+			
+			.sydneyPlaza
+			{
+				background:url('https://upload.wikimedia.org/wikipedia/commons/1/1e/%281%29Central_building_Broadway_Sydney-2.jpg');
+			}
+		</style>
 	</head>
 	<body>
+			
 		<!--
 			NAVIGATION
 		-->
-		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-			<a class="navbar-brand" href="#">Predicting Insolvents</a>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Five Musketeers</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="#abstract">Abstract <span class="sr-only">(current)</span></a>
-					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#background">Background</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#issue">Issue</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#model">Why do you need this model?</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#deliver">What does the model deliver?</a>
 					</li>
 				</ul>
 			</div>
@@ -33,57 +74,115 @@
 		<!--
 			BANNER
 		-->
-		<div 
-			class="jumbotron jumbotron-fluid" 
-			style="
-				background:url('https://s0.geograph.org.uk/geophotos/05/58/09/5580972_1e1349b8_1024x1024.jpg');
-				background-repeat:none
-				background-attachment: fixed;
-				background-size: cover;
-			"
-		>
-			<div class="container">
-				<h1 class="display-4">Predicting Insolvents and </h1>
-				<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+		<div class="jumbotron jumbotron-fluid coverImage parallax">
+			<div class="caption">
+				<div class="container">
+				<h1 class="display-4">Australian Compliances Prediction</h1>
+				<p class="lead">
+					Unleash the power of machine learning to predict the causal factors of noncompliance. <br/>
+					The team delivered learning Algorithm model to predict the risk of noncompliance on case by case basis.
+				</p>
+				</div>
 			</div>
-
 		</div>
-			
 		
 		<!--
 			VIDEO
 		-->
 		<div class="embed-responsive embed-responsive-16by9">
-			<iframe class="embed-responsive-item" src="URL HERE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe class="embed-responsive-item" src="URL HERE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		</div>
 	
 		<!--
 			CONTENT
-		-->
-		<div class="container">
+		-->	
 		
-			<h2 id="abstract">Abstract</h2>
-			<p>
-				Unleash the power of machine learning to predict the causal factors of noncompliance.
-				The team delivered learning Algorithm to predict the risk of noncompliance on case by case basis. The team also conceptualise a model to prescribe effective early interventions to prevent noncompliance.
-			</p>
-			
-			<h2 id="background">Background</h2>
-			<p>
-				Insolvency occurs when a person is unable to pay money owned by another person and/or company. Insolvency divides into cash-flow and balance sheet.
-				Cash-flow is referred to a person has no fluid assets to pay debt at due date, but can pay the debts
-				through selling owned assets. Thus, negotiation to extend due date with appropriate terms on paying certain penalty is the best approach.
-				While, balance sheet insolvency is referred to a person or a company doesn't own enough assets to pay the debt.
-				One of the common resolutions is declaring bankruptcy. In many occasion negotiations can resolve the issue without entering bankruptcy.
+		
+		<div class="jumbotron jumbotron-fluid coverImage parallax">
 					
+			<div class="caption">
+				<div class="container">
+					
+					<h2 id="background">Background</h2>
+					<p>
+						Insolvency occurs when a person is unable to pay money owned by another person and/or company. Insolvency divides into cash-flow and balance sheet. <br/>
+						Cash-flow is referred to a person who has no fluid assets to pay debt at due date, but can pay the debts through selling owned assets. Thus, negotiation to extend due date with appropriate terms on paying certain penalty is the best approach. <br/>
+						While, balance sheet insolvency is referred to a person or a company doesn't own enough assets to pay the debt. <br/>
+						One of the common resolutions is declaring bankruptcy. In many occasion negotiations can resolve the issue without entering bankruptcy.
+					<p>
+					
+				</div>	
+			</div>
+			
+		</div>
+			
+		<div class="container">
+				
 			<h2 id="issue">Issue</h2>
 			<p>
-				Insolvency is a complex issue, as the causes are diverse and the trajectory of a person experiencing insolvency varies.
-			</p>
+				Insolvency is a complex issue, as the causes are diverse and the trajectory of a person experiencing insolvency varies.  <br/>
+				Australian Government Financial Security Authority need to be equipped with additional capacity to predict the compliances of their potential clients and identify the best way to manage the debt collection processes on case-by-case basis.  <br/>
+				Thus, capitalising on the powerful prediction capability of machine learning is vital to manage the complexity of insolvency process.
+			<p>
+			
+		</div>
+		
+		<div class="container">
+			
+			<div class="row">
+				
+				<div class="col">
+					<img src="images/Picture1.png" class="img-fluid" alt="Responsive image"/>
+				</div>
+				<div class="col">
+					<img src="images/Rplot02.jpeg" class="img-fluid" alt="Responsive image"/>
+				</div>
+			</div>
+			
+			<h2 id="model">Why do you need this model?</h2>
+			<p>
+
+				There is a need to utilise machine learning to analyse large volume of data that are collected from various government agencies on the same population. The machine learning model need to analyse the data at a personal level and to consider the external factors when make prediction to each client. Personalised prediction is needed as each client is unique in his/her circumstances that lead to and surrounding insolvency.
+			<p>
+			
+		</div>
+		
+		<div class="container">
+				
+			<h2 id="deliver">What does the model deliver?</h2>
+			<p>
+				Our team built a complete machine learning model that harness large volume of government datasets from various organisations including: Australian Taxation Office, Australian Bureau of Statistics and Australian Government Financial Security Authority-non-compliance in personal insolvency data.  <br/>
+				Visualising the output of our model is significant for decision and policy makers in government agencies to simplify large data and provide an insight to make the right informed decisions to the client and the society in large.
+			<p>
+			
+		</div>
+		
+		<!--
+			FOOTER
+		-->
+		<div id="siteFooter">
+			<hr />
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col">
+					</div>
+					<div class="col">
+						<p>
+							Five Musketeers
+						</p>
+					</div>
+					<div class="col">
+						<p> 
+							<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 		
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	</body>
+	
 </html>
